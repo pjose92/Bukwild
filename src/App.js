@@ -1,15 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Buk from './Buk';
+import logo from './abc_logo.svg';
+import dataContent from './data/db.json';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Let's do this!</h1>
-      </header>
-    </div>
-  );
+var images = dataContent.pages.map(value => require(`./backgrounds/${value.blocks[0].background}`));
+class App extends React.Component{
+    constructor(){
+        super();
+        this.state = {
+            index : 0
+        }
+    }
+ 
+    render(){
+        return(
+
+                <Buk index={this.state.index} />
+        );
+    }
 }
 
 export default App;
