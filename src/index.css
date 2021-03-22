@@ -18,8 +18,7 @@ body {
 }
 
 
-
-/*Container*/
+/*Mian Container on the page*/
 .main-container {
   width: 100vw;
   min-height: 100vh;
@@ -34,4 +33,147 @@ body {
   transform: .2s;
   box-sizing: border-box;
 }
+
+
+/*Top UI Section*/
+.top-ui {
+  width: 100%;
+}
+
+.logo-contact-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 25px;
+  margin-bottom: 15px;
+
+}
+
+/* contact button */
+#contact-button {
+  width: 138px;
+  font-size: 1.2em;
+  line-height: normal;
+  font-weight: bold;
+  text-align: center;
+  color: var(--white);
+  padding: 12px 1px 12px 0;
+  border: solid 1px var(--white);
+  cursor: pointer;
+  transition: .1s;
+  transition-timing-function: ease-in;
+}
+
+#contact-button:hover {
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+
+/* Nav Links */
+
+.nav-link {
+  margin-bottom: 8px;
+  cursor: pointer;
+  width: fit-content;
+  transition: .2s;
+  font-family: 'HelveticaNeue';
+}
+
+.nav-link:hover {
+  color: var(--yellow);
+}
+
+/* Heading/ middle of the page */
+.headings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 5%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.headings div {
+  margin: 0 auto;
+}
+
+.headline {
+  font-family: HelveticaNeue;
+  font-size: calc(25vmin - 5vw);
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  color: var(--white);
+  vertical-align: middle;
+  text-align: center;
+  max-width: 1000px;
+}
+
+/* subhead on the page. middle page */
+.subhead{
+  margin: 25px  auto;
+  text-align: center;
+  width: 360px;
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: var(--white);
+  line-height: 1.6;
+}
+
+
+/* white bottom box */
+.cta-box {
+  width: 80%;
+  position: relative;
+  height: 180px;
+  background-color: var(--white);
+  color: var(--black);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 30px;
+  flex-wrap: wrap;
+}
+
+.cta-text {
+  font-size: 2em;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  text-align: center;
+}
+
+.lets-talk-button {
+  display: flex;
+  cursor: pointer;
+  transition: .2s;
+  align-items: center;
+}
+
+.lets-talk-button:hover {
+  transform: scale(2.1);
+}
+
+.lets-talk-button img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.LETS-TALK {
+  font-stretch: normal;
+  height: fit-content;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: var(--black);
+  font-size: 12px;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
 

@@ -26,9 +26,15 @@ class App extends React.Component{
                           Contact Us
                         </div>
                     </div>
-                    <div onClick={() => this.setState({index: 0})} className="nav-link">Industries</div>
-                    <div onClick={() => this.setState({index: 1})} className="nav-link">Services</div>
-                    <div onClick={() => this.setState({index: 2})} className="nav-link">About Us</div>
+                    <div onClick={() => this.setState({index: 0})} className="nav-link">
+                      Industries
+                    </div>
+                    <div onClick={() => this.setState({index: 1})} className="nav-link">
+                      Services
+                    </div>
+                    <div onClick={() => this.setState({index: 2})} className="nav-link">
+                      About Us
+                    </div>
                 </div>
                 <Buk index={this.state.index} />
             </div>
