@@ -1,0 +1,9 @@
+:root {
+  --yellow: #ffc004;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+}
