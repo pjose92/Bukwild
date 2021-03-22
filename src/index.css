@@ -17,6 +17,10 @@ body {
   box-sizing: border-box;
 }
 
+/* Everything but the background image should be constrained by a max-width of 1440px. */
+div:not(.main-container) {
+  max-width: 1440px;
+}
 
 /*Mian Container on the page*/
 .main-container {
