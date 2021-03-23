@@ -4,7 +4,10 @@ import logo from './assets/abc_logo.svg';
 import dataContent from './data/db.json';
 
 // this will map through the db.json file to get new background image
-var images = dataContent.pages.map(value => require(`./backgrounds/${value.blocks[0].background}`));
+
+var images = dataContent.pages.map(value => 
+  require(`./backgrounds/${value.blocks[0].background}`
+  ));
 class App extends React.Component{
     constructor(){
         super();
